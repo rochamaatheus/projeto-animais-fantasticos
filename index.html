@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animais Fantásticos</title>
+  <meta name="description" content="Conheça os animais mais fantásticos deste mundo!">
+  <link rel="stylesheet preload" href="./css/style.css" as="style">
+  <script>document.documentElement.className += ' js'</script>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Playfair+Display+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="grid-container">
+    <nav class="menu" data-menu="suave">
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+      <ul data-menu="lista" id="menu">
+        <li><a href="#animais">Animais</a></li>
+        <li data-dropdown>
+          <a href="sobre.html">Sobre</a>
+          <ul class="dropdown-menu">
+            <li><a href="empresa.html">Empresa</a></li>
+            <li><a href="equipe.html">Equipe</a></li>
+            <li><a href="investidores.html">Investidores</a></li>
+          </ul>
+        </li>
+        <li><a href="#faq">Faq</a></li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a data-modal="abrir" href="login.html">Login →</a></li>
+      </ul>
+    </nav>
+    <section class="grid-section animais" data-anime="scroll" id="animais">
+      <h1 class="titulo">Animais Fantásticos</h1>
+      <ul class="animais-lista" data-tab="menu">
+        <li><img src="./img/imagem1.webp" width="600" height="800" alt="Raposa"></li>
+        <li><img src="./img/imagem2.webp" width="600" height="800" alt="Esquilo"></li>
+        <li><img src="./img/imagem3.webp" width="600" height="800" alt="Urso"></li>
+        <li><img src="./img/imagem4.webp" width="600" height="800" alt="Lobo"></li>
+        <li><img src="./img/imagem5.webp" width="600" height="800" alt="Macaco"></li>
+        <li><img src="./img/imagem6.webp" width="600" height="800" alt="Leão"></li>
+      </ul>
+      <div class="animais-descricao" data-tab="content">
+        <section data-anime="show-right">
+          <h2>Raposa</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis, eligendi ab, quod dolorem vel vitae placeat dolore officia repellendus ipsum nulla asperiores ad aut?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, numquam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt harum temporibus facere rem tempore corrupti!</p>
+        </section>
+        <section data-anime="show-down">
+          <h2>Esquilo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis, eligendi ab, quod dolorem vel vitae placeat dolore officia repellendus ipsum nulla asperiores ad aut?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, numquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi inventore atque adipisci eius quam, minima ducimus nulla vitae suscipit accusantium ad a placeat tempore natus reprehenderit eos perferendis molestias mollitia.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt harum temporibus facere rem tempore corrupti!</p>
+        </section>
+        <section data-anime="show-right">
+          <h2>Urso</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis, eligendi ab, quod dolorem vel vitae placeat dolore officia repellendus ipsum nulla asperiores ad aut?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, numquam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt harum temporibus facere rem tempore corrupti!</p>
+        </section>
+        <section data-anime="show-down">
+          <h2>Lobo</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis, eligendi ab, quod dolorem vel vitae placeat dolore officia repellendus ipsum nulla asperiores ad aut?Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptatum quaerat dignissimos fuga at, asperiores assumenda eveniet voluptas dolor, veritatis earum sed delectus provident obcaecati quia saepe, ullam quos doloremque?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, numquam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesc Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque, reiciendis distinctio sint molestias praesentium unde repellendus iste temporibus vero repellat, quod, vel aperiam doloribus exercitationem asperiores quas blanditiis non sit. iunt harum temporibus facere rem tempore corrupti!</p>
+        </section>
+        <section data-anime="show-right">
+          <h2>Macaco</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis, eligendi ab, quod dolorem vel vitae placeat dolore officia repellendus ipsum nulla asperiores ad aut?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, numquam.</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt harum temporibus facere rem tempore corrupti!</p>
+        </section>
+        <section data-anime="show-down">
+          <h2>Leão</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque reiciendis, eligendi ab, quod dolorem vel vitae placeat dolore officia repellendus ipsum nulla asperiores ad aut?</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, numquam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam tenetur quis eum sapiente praesentium, officiis debitis deleniti sunt inventore excepturi repudiandae recusandae quod reiciendis reprehenderit a, quia maiores neque vel. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim quam, sequi, in, dicta doloribus harum assumenda consectetur officia atque perspiciatis magni cum aliquam molestias optio adipisci molestiae quibusdam possimus tempora?</p>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt harum temporibus facere rem tempore corrupti!</p>
+        </section>
+      </div>
+    </section>
+    <section class="grid-section numeros" data-anime="scroll">
+      <h1 class="titulo">Números</h1>
+      <div class="numeros-grid"></div>
+    </section>
+    <section class="grid-section faq" data-anime="scroll" id="faq">
+      <h1 class="titulo">FAQ</h1>
+      <dl class="faq-lista" data-anime="accordion">
+        <dt>Qual a idade dos animais?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae vitae sed at soluta harum pariatur excepturi voluptate hic sit!</dd>
+        <dt>Eles são fantásticos?</dt>
+        <dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed, quis?</dd>
+        <dt>Qual a diferença?</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, sed minima. Quas, consequuntur. Nobis, adipisci?</dd>
+        <dt>Como proteger?</dt>
+        <dd>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam tempora officiis ab animi iste corporis quod pariatur culpa minima veritatis? Porro qui quisquam quaerat soluta?</dd>
+      </dl>
+    </section>
+    <section class="grid-section contato" data-anime="scroll" id="contato">
+      <h1 class="titulo">Contato</h1>
+      <div class="mapa" data-tooltip aria-label="Endereço ali perto daquele lugar.">
+        <img src="./img/mapa.webp" width="1200" height="1600" alt="mapa">
+      </div>
+      <ul class="dados">
+        <li>contato@rochamaatheus.com</li>
+        <li>+55 (47) 9999-9999</li>
+        <li>Rua Ali Perto, nº 222</li>
+        <li>Joinville - SC</li>
+        <li>Doe <span class="btc-preco">0</span> Bitcoin para ajudá-los</li>
+        <li data-semana="1,2,3,4,5" data-horario="8,18">Seg à Sex das 8 às 18h</li>
+      </ul>
+    </section>
+    <footer class="copy">
+      <p>Todos os direitos reservados.</p>
+    </footer>
+  </div>
+  <section class="modal-container" data-modal="container">
+    <div class="modal">
+      <button data-modal="fechar" class="fechar">X</button>
+      <form action="">
+        <label for="email">Email</label>
+        <input type="text" for="email" id="email" autocomplete="off">
+        <label for="senha">Senha</label>
+        <input type="password" for="senha" id="senha">
+        <button type="submit">Entrar</button>
+      </form>
+    </div>
+  </section>
+  <script src="./main.js"></script>
+</body>
+
+</html>
