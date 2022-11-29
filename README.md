@@ -18,9 +18,9 @@ básicos de arrays, loops, variáveis, constantes e funções para a criação d
 
 <h2>🖥️ Demonstração</h2>
 
-[![Animais Fantásticos](https://i.imgur.com/ZyDF5bo.png "Clique para acessar o projeto")](https://rochamaatheus.github.io/animais-fantasticos/index.html "Clique para acessar o projeto")   
+[![Animais Fantásticos](https://i.imgur.com/ZyDF5bo.png "Clique para acessar o projeto")](https://rochamaatheus.github.io/projeto-animais-fantasticos/index.html "Clique para acessar o projeto")   
 
-Você pode acessar o projeto clicando [aqui](https://rochamaatheus.github.io/animais-fantasticos/index.html).
+Você pode acessar o projeto clicando [aqui](https://rochamaatheus.github.io/projeto-animais-fantasticos/index.html).
 
 <hr>
 
@@ -28,10 +28,10 @@ Você pode acessar o projeto clicando [aqui](https://rochamaatheus.github.io/ani
 
 ```bash
 # Clone o repositório
-git clone https://github.com/rochamaatheus/animais-fantasticos
+git clone https://github.com/rochamaatheus/projeto-animais-fantasticos
 
 # Entre no diretório
-cd animais-fantasticos
+cd projeto-animais-fantasticos
 ```
 
 <hr>
