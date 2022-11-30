@@ -10,6 +10,8 @@ import initDropDownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initFuncionamento from './modules/funcionamento.js';
 
+fetchAnimais('../../animais-api.json', '.numeros-grid');
+
 const scrollSuave = new ScrollSuave('[data-menu="suave"] a[href^="#"]');
 scrollSuave.init();
 
@@ -31,7 +33,5 @@ scrollAnima.init();
 initDropDownMenu();
 initMenuMobile();
 initFuncionamento();
-
-fetchAnimais('../../animais-api.json', '.numeros-grid');
 
 fetchBTC('https://blockchain.info/ticker', '.btc-preco');
