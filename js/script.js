@@ -6,7 +6,7 @@ import Tooltip from './modules/tooltip.js';
 import fetchAnimais from './modules/fetch-animais.js';
 import fetchBTC from './modules/fetch-bitcoin.js';
 import ScrollAnima from './modules/scroll-anima.js';
-import initDropDownMenu from './modules/dropdown-menu.js';
+import DropdownMenu from './modules/dropdown-menu.js';
 import initMenuMobile from './modules/menu-mobile.js';
 import initFuncionamento from './modules/funcionamento.js';
 
@@ -30,7 +30,9 @@ tooltip.init();
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
 scrollAnima.init();
 
-initDropDownMenu();
+const dropdownMenu = new DropdownMenu('[data-dropdown]', ['touchstart', 'click'], 'ativo');
+dropdownMenu.init();
+
 initMenuMobile();
 initFuncionamento();
 
