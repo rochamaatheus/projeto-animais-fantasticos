@@ -9,6 +9,7 @@ import ScrollAnima from './modules/scroll-anima.js';
 import DropdownMenu from './modules/dropdown-menu.js';
 import MenuMobile from './modules/menu-mobile.js';
 import Funcionamento from './modules/funcionamento.js';
+import SlideNav from './modules/slide.js';
 
 fetchAnimais('./animais-api.json', '.numeros-grid');
 
@@ -18,10 +19,17 @@ scrollSuave.init();
 const accordion = new Accordion('[data-anime="accordion"] dt');
 accordion.init();
 
-const tabNav = new TabNav('[data-tab="menu"] li', '[data-tab="content"] section');
+const tabNav = new TabNav(
+  '[data-tab="menu"] li',
+  '[data-tab="content"] section',
+);
 tabNav.init();
 
-const modal = new Modal('[data-modal="abrir"]', '[data-modal="fechar"]', '[data-modal="container"]');
+const modal = new Modal(
+  '[data-modal="abrir"]',
+  '[data-modal="fechar"]',
+  '[data-modal="container"]',
+);
 modal.init();
 
 const tooltip = new Tooltip('[data-tooltip]');
@@ -30,13 +38,25 @@ tooltip.init();
 const scrollAnima = new ScrollAnima('[data-anime="scroll"]');
 scrollAnima.init();
 
-const dropdownMenu = new DropdownMenu('[data-dropdown]', 'ativo', ['touchstart', 'click']);
+const dropdownMenu = new DropdownMenu('[data-dropdown]', 'ativo', [
+  'touchstart',
+  'click',
+]);
 dropdownMenu.init();
 
-const menuMobile = new MenuMobile('[data-menu="button"]', '[data-menu="lista"]', 'active', ['touchstart', 'click']);
+const menuMobile = new MenuMobile(
+  '[data-menu="button"]',
+  '[data-menu="lista"]',
+  'active',
+  ['touchstart', 'click'],
+);
 menuMobile.init();
 
 const funcionamento = new Funcionamento('[data-semana]', 'aberto');
 funcionamento.init();
 
 fetchBTC('https://blockchain.info/ticker', '.btc-preco');
+
+const slide = new SlideNav('.slide', '.wrapper', 'ativo');
+slide.init();
+slide.addControl('.custom-controls');
