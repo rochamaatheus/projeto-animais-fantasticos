@@ -17,7 +17,8 @@ export default class ScrollAnima {
         offset: Math.floor(offset - this.windowHalf),
       };
     });
-    this.distance[this.distance.length - 1].offset += 380;
+    this.distance[3].offset += 500;
+    this.distance[4].offset += 800;
   }
 
   // Verifica a distância em cada objeto em relação
